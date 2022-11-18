@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins:200i,400&display=swap');
-
+@import url("https://fonts.googleapis.com/css?family=Poppins:200i,400&display=swap");
 
 /* variables for common rules */
 :root {
@@ -79,11 +78,12 @@ body::before {
     text-align: center;
     font-size: ;
 }
-h1,p{
+h1,
+p {
     margin-top: 0;
     margin-bottom: 5px;
 }
-p{
+p {
     font-size: 18px;
     margin-left: 1px;
 }
@@ -103,7 +103,6 @@ label {
     align-items: center;
     font-size: 1.125rem;
     margin-bottom: 8px;
-
 }
 .input {
     display: block;
@@ -144,16 +143,18 @@ button {
     color: #e4e4e4;
 }
 
-.input-radio,.input-checkbox{
+.input-radio,
+.input-checkbox {
     display: inline-block;
     margin-right: 10px;
     min-width: 20px;
     min-height: 20px;
 }
-.input-radio:checked,.input-checkbox:checked{
+.input-radio:checked,
+.input-checkbox:checked {
     accent-color: lightgreen;
 }
-.input-textarea{
+.input-textarea {
     width: 100%;
     height: 120px;
     padding-left: 10px;
@@ -161,19 +162,19 @@ button {
     border: 1px solid #ced4da;
     transition: border-color 0.15s ease-in, box-shadow 0.15s ease-in-out;
 }
-.input-textarea:focus{
+.input-textarea:focus {
     border-color: lightgreen;
     outline: 0;
     box-shadow: 0 0 0 0.2rem lightgreen;
 }
-.submit-button{
+.submit-button {
     width: 100%;
     height: 50px;
     border-radius: 2px;
     background-color: var(--form-color);
     color: var(--back-color);
 }
-.submit-button:hover{
+.submit-button:hover {
     background-color: var(--back-color);
     color: var(--text-color);
     cursor: pointer;
