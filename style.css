@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200i,400&display=swap');
+
+
+/* variables for common rules */
+:root {
+    --text-color: white;
+    --form-color: ghostwhite;
+    --back-color: rgb(34, 139, 34);
+}
+*,
+::before,
+::after {
+    box-sizing: border-box;
+}
+
+/* styling the body */
+
+body {
+    font-family: Poppins, sans-serif, verdana, Geneva, Tahoma;
+    color: var(--text-color);
+    font-weight: 400;
+    font-size: 16px;
+}
+/* for background image */
+body::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: -1;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background: var(--back-color);
+    background-image: linear-gradient(
+            115deg,
+            rgb(34, 139, 34, 0.8),
+            rgb(144, 238, 144, 0.7)
+        ),
+        url(https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg) !important;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* styling the main div and main tag */
+.container {
+    width: 100%;
+    margin: 3.125rem auto 0 auto;
+}
+@media (min-width: 768px) {
+    .container {
+        max-width: 720px;
+    }
+}
+/* styling header section */
+.heading {
+    padding: 0 0.625rem;
+    margin-bottom: 1.875rem;
+}
+#title {
+    margin-bottom: 5px;
+    font-weight: 400;
+    line-height: 1.2;
+    font-size: 32px;
+}
+#description {
+    font-style: italic;
+    font-weight: 200;
+    text-shadow: 1px 1px 1px rgb(173, 255, 47, 40%);
+    font-size: 1.125rem;
+}
+
+#title,
+#description {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    text-align: center;
+    font-size: ;
+}
+h1,p{
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+p{
+    font-size: 18px;
+    margin-left: 1px;
+}
+/* styling the form */
+
+#survey-form {
+    background-color: rgba(15, 83, 15, 0.6);
+    border-radius: 5px;
+}
+
+.form-info {
+    margin: 0 auto 1.25rem auto;
+    padding: 0.25rem;
+}
+label {
+    display: flex;
+    align-items: center;
+    font-size: 1.125rem;
+    margin-bottom: 8px;
+
+}
+.input {
+    display: block;
+    width: 100%;
+    height: 38px;
+    border-radius: 4px;
+    border: 1px solid #ced4da;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-clip: padding-box;
+    color: black;
+    background-color: ghostwhite;
+    transition: border-color 0.15s ease-in, box-shadow 0.15s ease-in-out;
+}
+.input:focus {
+    border-color: lightgreen;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem lightgreen;
+}
+
+input,
+button,
+select,
+textarea {
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+
+button {
+    border: none;
+}
+
+.clue {
+    margin-left: 0.25rem;
+    font-size: 0.9rem;
+    color: #e4e4e4;
+}
+
+.input-radio,.input-checkbox{
+    display: inline-block;
+    margin-right: 10px;
+    min-width: 20px;
+    min-height: 20px;
+}
+.input-radio:checked,.input-checkbox:checked{
+    accent-color: lightgreen;
+}
+.input-textarea{
+    width: 100%;
+    height: 120px;
+    padding-left: 10px;
+    border-radius: 4px;
+    border: 1px solid #ced4da;
+    transition: border-color 0.15s ease-in, box-shadow 0.15s ease-in-out;
+}
+.input-textarea:focus{
+    border-color: lightgreen;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem lightgreen;
+}
+.submit-button{
+    width: 100%;
+    height: 50px;
+    border-radius: 2px;
+    background-color: var(--form-color);
+    color: var(--back-color);
+}
+.submit-button:hover{
+    background-color: var(--back-color);
+    color: var(--text-color);
+    cursor: pointer;
+}
+@media (min-width: 480px) {
+    form {
+        padding: 2.5rem;
+    }
+}
