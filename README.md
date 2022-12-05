@@ -1,3 +1,3 @@
-# Survey-Form
+# Simple HTMl and CSS Projects
 
-My first survey form project with simple HTML and CSS
+My first few projects with simple HTML and CSS
